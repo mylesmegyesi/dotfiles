@@ -1,0 +1,11 @@
+[user]
+	name = Myles Megyesi
+	email = mylesmegyesi@me.com
+[github]
+	user = mylesmegyesi
+[color]
+	ui = true
+[alias]
+	hist = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
+[push]
+	default = upstream
