@@ -5,6 +5,7 @@ set shiftwidth=2
 set expandtab
 set number
 set wrap
+set noswapfile
 syntax on
 filetype off
 
