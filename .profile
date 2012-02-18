@@ -18,6 +18,9 @@ export GIT_PS1_SHOWDIRTYSTATE=1 # shows the state of the repo in prompt
 # Vim
 export EDITOR='vim'
 
+# aliases
+alias be="bundle exec"
+
 # prompt
 RESET='\[\e[0m\]'
 BOLD='\[\e[1m\]'
@@ -45,3 +48,4 @@ export CLICOLOR=1 # lets ls and stuff show colors
 
 # rvm
 [[ -s "/Users/mylesmegyesi/.rvm/scripts/rvm" ]] && source "/Users/mylesmegyesi/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
