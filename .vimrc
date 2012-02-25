@@ -14,8 +14,8 @@ call vundle#rc()
 
 " My Bundles here:
 Bundle 'L9'
-Bundle 'FuzzyFinder'
 Bundle 'VimClojure'
 Bundle 'The-NERD-tree'
+Bundle 'Command-T'
 
 filetype plugin indent on     " required!
