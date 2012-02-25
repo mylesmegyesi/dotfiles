@@ -12,17 +12,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-filetype off                   " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-"Bundle 'gmarik/vundle'
-
 " My Bundles here:
-" vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'VimClojure'
