@@ -1,3 +1,21 @@
+" Bundles
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'L9'
+Bundle 'VimClojure'
+let vimclojure#HighlightBuiltins=0
+let vimclojure#ParenRainbow=1
+
+Bundle 'The-NERD-tree'
+Bundle 'Command-T'
+
+filetype plugin indent on
+
+" Settings
+
 set nocompatible
 set autoindent
 set textwidth=0 nosmartindent tabstop=2 shiftwidth=2 softtabstop=2 expandtab
@@ -21,16 +39,4 @@ function! Trim()
 endfunction
 
 command! -nargs=0 Trim :call Trim()
-nnoremap <silent> <Leader>cw :Trim<CR>
-
-" Bundles
-
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-filetype plugin indent on
-
-Bundle 'L9'
-Bundle 'VimClojure'
-Bundle 'The-NERD-tree'
-Bundle 'Command-T'
+nnoremap <silent> <Leader>tw :Trim<CR>

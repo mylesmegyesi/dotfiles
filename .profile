@@ -18,6 +18,9 @@ export GIT_PS1_SHOWDIRTYSTATE=1 # shows the state of the repo in prompt
 # Vim
 export EDITOR='vim'
 
+# Postgres
+export PGDATA="/usr/local/var/postgres"
+
 # aliases
 alias be="bundle exec"
 
