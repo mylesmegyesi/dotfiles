@@ -10,6 +10,8 @@ let vimclojure#HighlightBuiltins=0
 let vimclojure#ParenRainbow=1
 
 Bundle 'The-NERD-tree'
+let NERDTreeShowHidden=1
+
 Bundle 'Command-T'
 
 filetype plugin indent on
@@ -24,6 +26,15 @@ set wrap
 set noswapfile
 set bs=2
 syntax on
+
+" Highlight trailing whitespace
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/
+
+" Set up highlight group & retain through colorscheme changes
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
 
 " Keymaps
 
