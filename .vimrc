@@ -41,6 +41,7 @@ map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
 nmap , \
 map <Leader>t :CommandT<CR>
 map <Leader>nt :NERDTreeToggle<CR>
+map <Leader>cf :CommandTFlush<CR>
 
 function! Trim()
   exe "normal mz"

@@ -6,6 +6,7 @@
 [color]
 	ui = true
 [alias]
-	hist = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
+  hist = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
+  serve = !git daemon --reuseaddr --verbose --base-path=. --export-all --enable=receive-pack ./.git
 [push]
 	default = upstream
