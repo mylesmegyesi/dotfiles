@@ -4,3 +4,6 @@
 [submodule "vim-fugitive"]
 	path = vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "vim-ruby"]
+	path = vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby.git

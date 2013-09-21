@@ -40,6 +40,7 @@ cp 'vcprompt',                    '.bin/vcprompt'
 cp 'vimrc',                       '.vimrc'
 cp 'vim',                         '.vim'
 cp 'vim-fugitive',                '.vim/bundle/vim-fugitive'
+cp 'vim-ruby',                    '.vim/bundle/vim-ruby'
 
 cp 'gitconfig',                   '.gitconfig'
 cp 'tmux.conf',                   '.tmux.conf'
