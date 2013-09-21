@@ -44,6 +44,7 @@ cp 'vim-ruby',                    '.vim/bundle/vim-ruby'
 cp 'nerdtree',                    '.vim/bundle/nerdtree'
 cp 'VimClojure',                  '.vim/bundle/VimClojure'
 cp 'vim-coffee-script',           '.vim/bundle/vim-coffee-script'
+cp 'mustache.vim',                '.vim/bundle/mustache.vim'
 
 cp 'gitconfig',                   '.gitconfig'
 cp 'tmux.conf',                   '.tmux.conf'
