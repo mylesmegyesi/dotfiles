@@ -9,7 +9,7 @@ TARGET_OWNER = ARGV[1]
 def cp(local, target)
   full_local  = File.join(LOCAL_ROOT, local)
   full_target = File.join(TARGET_ROOT, target)
-  FileUtils.rm full_target if File.exist?(sym_link)
+  FileUtils.rm full_target if File.exist?(full_target)
   FileUtils.cp full_local, full_target
   FileUtils.chown TARGET_OWNER, TARGET_OWNER, full_target
 end
