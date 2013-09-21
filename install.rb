@@ -36,6 +36,10 @@ cp 'zsh-syntax-highlighting.zsh', '.zsh/zsh-syntax-highlighting.zsh'
 cp 'zsh-syntax-highlighting',     '.zsh/zsh-syntax-highlighting'
 cp 'vcprompt',                    '.bin/vcprompt'
 
+# Vim
+cp 'vimrc',                       '.vimrc'
+cp 'vim',                         '.vim'
+
 cp 'gitconfig',                   '.gitconfig'
 cp 'tmux.conf',                   '.tmux.conf'
 cp 'gemrc',                       '.gemrc'
