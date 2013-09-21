@@ -10,3 +10,6 @@
 [submodule "nerdtree"]
 	path = nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule "VimClojure"]
+	path = VimClojure
+	url = git@github.com:vim-scripts/VimClojure.git
