@@ -26,11 +26,14 @@ def cp(local, target)
   end
 end
 
+# ZSH files
 cp 'zshrc',                       '.zshrc'
+cp 'prompt.zsh',                  '.zsh/prompt.zsh'
+cp 'aliases.zsh',                 '.zsh/aliases.zsh'
+cp 'leiningen.zsh',               '.zsh/leiningen.zsh'
 cp 'zsh-syntax-highlighting.zsh', '.zsh/zsh-syntax-highlighting.zsh'
 cp 'zsh-syntax-highlighting',     '.zsh/zsh-syntax-highlighting'
-cp 'prompt.zsh',                  '.zsh/prompt.zsh'
 cp 'vcprompt',                    '.bin/vcprompt'
-cp 'aliases.zsh',                 '.zsh/aliases.zsh'
+
 cp 'gitconfig',                   '.gitconfig'
 cp 'tmux.conf',                   '.tmux.conf'
