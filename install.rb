@@ -14,4 +14,4 @@ def cp(local, target)
   FileUtils.chown TARGET_OWNER, TARGET_OWNER, full_target
 end
 
-copy_file('zshrc', '.zshrc')
+cp('zshrc', '.zshrc')
