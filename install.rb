@@ -31,9 +31,17 @@ cp 'zshrc',                       '.zshrc'
 cp 'prompt.zsh',                  '.zsh/prompt.zsh'
 cp 'aliases.zsh',                 '.zsh/aliases.zsh'
 cp 'leiningen.zsh',               '.zsh/leiningen.zsh'
+cp 'ruby.zsh',                    '.zsh/ruby.zsh'
 cp 'zsh-syntax-highlighting.zsh', '.zsh/zsh-syntax-highlighting.zsh'
 cp 'zsh-syntax-highlighting',     '.zsh/zsh-syntax-highlighting'
 cp 'vcprompt',                    '.bin/vcprompt'
 
 cp 'gitconfig',                   '.gitconfig'
 cp 'tmux.conf',                   '.tmux.conf'
+cp 'gemrc',                       '.gemrc'
+cp 'rspec',                       '.rspec'
+
+# Make ZSH the default login shell
+zsh_path = `which zsh`
+`chsh -s #{zsh_path} #{TARGET_OWNER}`
+
