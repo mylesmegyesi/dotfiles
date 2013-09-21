@@ -10,6 +10,9 @@ def cp(local, target)
   full_local  = File.join(LOCAL_ROOT, local)
   full_target = File.join(TARGET_ROOT, target)
   FileUtils.rm full_target if File.exist?(full_target)
+  full_target_dir = File.dirname(full_target)
+  FileUtils.mkpath(full_target_dir)
+  FileUtils.chown TARGET_OWNER, TARGET_OWNER, full_target_dir
   FileUtils.cp full_local, full_target
   FileUtils.chown TARGET_OWNER, TARGET_OWNER, full_target
 end
