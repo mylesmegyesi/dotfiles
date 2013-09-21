@@ -22,3 +22,6 @@
 [submodule "vim-jst"]
 	path = vim-jst
 	url = git@github.com:briancollins/vim-jst.git
+[submodule "Command-T"]
+	path = Command-T
+	url = git@github.com:wincent/Command-T.git

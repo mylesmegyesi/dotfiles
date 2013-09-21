@@ -46,6 +46,10 @@ cp 'VimClojure',                  '.vim/bundle/VimClojure'
 cp 'vim-coffee-script',           '.vim/bundle/vim-coffee-script'
 cp 'mustache.vim',                '.vim/bundle/mustache.vim'
 cp 'vim-jst',                     '.vim/bundle/vim-jst'
+cp 'Command-T',                   '.vim/bundle/Command-T'
+
+# Compile Command-T
+`cd #{File.join(TARGET_ROOT, '.vim/bundle/Command-T')} && ruby extconf.rb && make clean && make`
 
 cp 'gitconfig',                   '.gitconfig'
 cp 'tmux.conf',                   '.tmux.conf'
