@@ -41,6 +41,7 @@ cp 'vimrc',                       '.vimrc'
 cp 'vim',                         '.vim'
 cp 'vim-fugitive',                '.vim/bundle/vim-fugitive'
 cp 'vim-ruby',                    '.vim/bundle/vim-ruby'
+cp 'nerdtree',                    '.vim/bundle/nerdtree'
 
 cp 'gitconfig',                   '.gitconfig'
 cp 'tmux.conf',                   '.tmux.conf'

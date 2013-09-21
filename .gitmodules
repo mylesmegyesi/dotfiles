@@ -7,3 +7,6 @@
 [submodule "vim-ruby"]
 	path = vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
+[submodule "nerdtree"]
+	path = nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
