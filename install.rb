@@ -11,6 +11,9 @@ def cp(local, target)
   full_target = File.join(TARGET_ROOT, target)
   FileUtils.rm full_target if File.exist?(full_target)
   FileUtils.cp full_local, full_target
+  p '*' * 8
+  p File.stat(full_target)
+  p '*' * 8
   FileUtils.chown TARGET_OWNER, TARGET_OWNER, full_target
 end
 
