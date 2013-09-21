@@ -39,6 +39,7 @@ cp 'vcprompt',                    '.bin/vcprompt'
 # Vim
 cp 'vimrc',                       '.vimrc'
 cp 'vim',                         '.vim'
+cp 'vim-fugitive',                '.vim/bundle/vim-fugitive'
 
 cp 'gitconfig',                   '.gitconfig'
 cp 'tmux.conf',                   '.tmux.conf'
