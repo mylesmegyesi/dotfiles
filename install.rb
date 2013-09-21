@@ -15,3 +15,6 @@ def cp(local, target)
 end
 
 cp('zshrc', '.zshrc')
+cp('zsh-syntax-highlighting.zsh', '.zsh/zsh-syntax-highlighting.zsh')
+cp('prompt.zsh', '.zsh/prompt.zsh')
+cp('vcprompt', '.bin/vcprompt')

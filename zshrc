@@ -1,5 +1,5 @@
 # Path
-export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+export PATH=$HOME/.bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 # Completion
 setopt COMPLETE_IN_WORD
