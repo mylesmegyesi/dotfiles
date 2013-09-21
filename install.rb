@@ -26,10 +26,11 @@ def cp(local, target)
   end
 end
 
-cp('zshrc', '.zshrc')
-cp('zsh-syntax-highlighting.zsh', '.zsh/zsh-syntax-highlighting.zsh')
-cp('zsh-syntax-highlighting', '.zsh/zsh-syntax-highlighting')
-cp('prompt.zsh', '.zsh/prompt.zsh')
-cp('vcprompt', '.bin/vcprompt')
-cp('aliases.zsh', '.zsh/aliases.zsh')
-cp('gitconfig', '.gitconfig')
+cp 'zshrc',                       '.zshrc'
+cp 'zsh-syntax-highlighting.zsh', '.zsh/zsh-syntax-highlighting.zsh'
+cp 'zsh-syntax-highlighting',     '.zsh/zsh-syntax-highlighting'
+cp 'prompt.zsh',                  '.zsh/prompt.zsh'
+cp 'vcprompt',                    '.bin/vcprompt'
+cp 'aliases.zsh',                 '.zsh/aliases.zsh'
+cp 'gitconfig',                   '.gitconfig'
+cp 'tmux.conf',                   '.tmux.conf'
