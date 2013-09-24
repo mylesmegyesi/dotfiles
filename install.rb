@@ -9,7 +9,7 @@ TARGET_OWNER = (ARGV[1] || '').strip
 fail 'you need to supply arguments correctly' if TARGET_ROOT == '' || TARGET_OWNER == ''
 
 def sh(*cmd)
-  Kernel.system(*cmd) || fail("Command failed with status (#{$?.exitstatus}): " + "[#{*cmd}]")
+  Kernel.system(*cmd) || fail("Command failed with status (#{$?.exitstatus}): " + "#{cmd}")
 end
 
 def cp(local, target)
