@@ -9,7 +9,6 @@ TARGET_OWNER = (ARGV[1] || '').strip
 fail 'you need to supply arguments correctly' if TARGET_ROOT == '' || TARGET_OWNER == ''
 
 def sh(cmd)
-  fail "Command is: #{cmd} : target owner is: #{TARGET_OWNER}"
   Kernel.system(cmd) || fail("Command failed with status (#{$?.exitstatus}): " + "[#{cmd}]")
 end
 
