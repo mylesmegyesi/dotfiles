@@ -4,12 +4,10 @@ require 'fileutils'
 
 LOCAL_ROOT   = File.dirname(__FILE__)
 TARGET_ROOT  = ARGV[0]
-TARGET_OWNER = (ARGV[1] || '').strip
+TARGET_OWNER = ARGV[1]
 
-fail 'you need to supply arguments correctly' if TARGET_ROOT == '' || TARGET_OWNER == ''
-
-def sh(*cmd)
-  Kernel.system(*cmd) || fail("Command failed with status (#{$?.exitstatus}): " + "#{cmd}")
+def sh(cmd)
+  Kernel.system(cmd) || fail("Command failed with status (#{$?.exitstatus}): " + "#{cmd}")
 end
 
 def cp(local, target)
@@ -64,5 +62,5 @@ cp 'gemrc',                       '.gemrc'
 cp 'rspec',                       '.rspec'
 
 # Make ZSH the default login shell
-sh 'chsh', '-s', `which zsh`.strip, TARGET_OWNER
+sh "chsh -s #{`which zsh`.strip} #{TARGET_OWNER}"
 
