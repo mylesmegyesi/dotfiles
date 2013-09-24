@@ -64,7 +64,7 @@ cp 'gemrc',                       '.gemrc'
 cp 'rspec',                       '.rspec'
 
 # Make ZSH the default login shell
-zsh_path = IO.popen('which zsh').readlines.first
+zsh_path = `which zsh`.split(/ /).first
 fail "aaaaaaaaaaaaaaaaaaaaaaaaaa #{zsh_path} aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: #{zsh_path}"
 sh "chsh -s #{zsh_path} \"#{TARGET_OWNER}\""
 
