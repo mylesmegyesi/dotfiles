@@ -6,6 +6,14 @@ LOCAL_ROOT   = File.dirname(__FILE__)
 TARGET_ROOT  = ARGV[0]
 TARGET_OWNER = ARGV[1]
 
+def sh(cmd)
+  ok = Kernel.system(cmd)
+  status = $?
+  ok or
+    fail "Command failed with status (#{status.exitstatus}): " +
+    "[#{cmd}]"
+end
+
 def cp(local, target)
   full_local  = File.join(LOCAL_ROOT, local)
   full_target = File.join(TARGET_ROOT, target)
@@ -50,7 +58,7 @@ cp 'Command-T',                   '.vim/bundle/Command-T'
 cp 'vim-markdown',                '.vim/bundle/vim-markdown'
 
 # Compile Command-T
-`cd #{File.join(TARGET_ROOT, '.vim/bundle/Command-T/ruby/command-t')} && ruby extconf.rb && make clean && make`
+sh "cd #{File.join(TARGET_ROOT, '.vim/bundle/Command-T/ruby/command-t')} && ruby extconf.rb && make clean && make"
 
 cp 'gitconfig',                   '.gitconfig'
 cp 'tmux.conf',                   '.tmux.conf'
@@ -59,5 +67,5 @@ cp 'rspec',                       '.rspec'
 
 # Make ZSH the default login shell
 zsh_path = `which zsh`
-`chsh -s #{zsh_path} #{TARGET_OWNER}`
+sh "chsh -s #{zsh_path} #{TARGET_OWNER}"
 
