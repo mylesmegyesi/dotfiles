@@ -65,6 +65,6 @@ cp 'rspec',                       '.rspec'
 
 # Make ZSH the default login shell
 zsh_path = IO.popen('which zsh').readlines.first
-fail "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: #{zsh_path}"
+fail "aaaaaaaaaaaaaaaaaaaaaaaaaa #{zsh_path} aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: #{zsh_path}"
 sh "chsh -s #{zsh_path} \"#{TARGET_OWNER}\""
 
