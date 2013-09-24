@@ -4,14 +4,13 @@ require 'fileutils'
 
 LOCAL_ROOT   = File.dirname(__FILE__)
 TARGET_ROOT  = ARGV[0]
-TARGET_OWNER = ARGV[1]
+TARGET_OWNER = ARGV[1].strip
 
 def sh(cmd)
   ok = Kernel.system(cmd)
   status = $?
   ok or
-    fail "Command failed with status (#{status.exitstatus}): " +
-    "[#{cmd}]"
+    fail "Command failed with status (#{status.exitstatus}): " + "[#{cmd}]"
 end
 
 def cp(local, target)
