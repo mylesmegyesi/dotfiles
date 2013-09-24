@@ -47,6 +47,7 @@ cp 'vim-coffee-script',           '.vim/bundle/vim-coffee-script'
 cp 'mustache.vim',                '.vim/bundle/mustache.vim'
 cp 'vim-jst',                     '.vim/bundle/vim-jst'
 cp 'Command-T',                   '.vim/bundle/Command-T'
+cp 'vim-markdown',                '.vim/bundle/vim-markdown'
 
 # Compile Command-T
 `cd #{File.join(TARGET_ROOT, '.vim/bundle/Command-T/ruby/command-t')} && ruby extconf.rb && make clean && make`
