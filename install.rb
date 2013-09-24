@@ -64,5 +64,7 @@ cp 'gemrc',                       '.gemrc'
 cp 'rspec',                       '.rspec'
 
 # Make ZSH the default login shell
-sh "chsh -s #{`which zsh`} \"#{TARGET_OWNER}\""
+zsh_path = `which zsh`
+fail "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: #{zsh_path}"
+sh "chsh -s #{zsh_path} \"#{TARGET_OWNER}\""
 
