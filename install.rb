@@ -8,8 +8,8 @@ TARGET_OWNER = (ARGV[1] || '').strip
 
 fail 'you need to supply arguments correctly' if TARGET_ROOT == '' || TARGET_OWNER == ''
 
-def sh(cmd)
-  Kernel.system(cmd) || fail("Command failed with status (#{$?.exitstatus}): " + "[#{cmd}]")
+def sh(*cmd)
+  Kernel.system(*cmd) || fail("Command failed with status (#{$?.exitstatus}): " + "[#{*cmd}]")
 end
 
 def cp(local, target)
@@ -64,6 +64,5 @@ cp 'gemrc',                       '.gemrc'
 cp 'rspec',                       '.rspec'
 
 # Make ZSH the default login shell
-zsh_path = `which zsh`.split(/ /).first
-sh "chsh -s #{zsh_path} \"#{TARGET_OWNER}\""
+sh 'chsh', '-s', `which zsh`, TARGET_OWNER
 
