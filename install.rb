@@ -65,5 +65,5 @@ cp 'rspec',                       '.rspec'
 
 # Make ZSH the default login shell
 zsh_path = `which zsh`
-sh "chsh -s #{zsh_path} #{TARGET_OWNER}"
+sh "sudo chsh -s #{zsh_path} #{TARGET_OWNER}"
 
