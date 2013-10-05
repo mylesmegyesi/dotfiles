@@ -88,4 +88,3 @@ let g:CommandTAcceptSelectionVSplitMap=['<C-v>']
 let g:CommandTCancelMap=['<Esc>', '<C-c>']
 let g:CommandTMaxHeight=10
 let g:vim_markdown_folding_disabled=1
-setlocal spell spelllang=en_us
