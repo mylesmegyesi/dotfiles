@@ -52,27 +52,9 @@ if &t_Co == 256
   colorscheme Tomorrow-Night
 endif
 
-function! Trim()
-  exe "normal mz"
-  %s/\s*$//
-  exe "normal `z"
-  exe "normal zz"
-endfunction
-
 " Keymaps
 
 nmap , \
-command! -nargs=0 Trim :call Trim()
-nnoremap <silent> <Leader>cw :Trim<CR>
-nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
-nnoremap <silent> <Leader>nr :NERDTree<CR>
-nnoremap <silent> <Leader>nf :NERDTreeFind<CR>
-nnoremap <silent> <Leader>nh :nohls<CR>
-nnoremap <silent> <Leader>t :CommandT<CR>
-nnoremap <silent> <Leader>cf :CommandTFlush<CR>
-nnoremap <silent> <Leader>cb :CommandTBuffer<CR>
-nnoremap <silent> <Leader>cj :CommandTJump<CR>
-nnoremap <silent> <Leader>ct :CommandTTag<CR>
 noremap <silent> <leader><space> :noh<cr>:call clearmatches()<cr>
 imap <C-L> <SPACE>=><SPACE>
 noremap j gj
@@ -80,11 +62,21 @@ noremap k gk
 noremap gj j
 noremap gk k
 
-let vimclojure#HighlightBuiltins=0
-let vimclojure#ParenRainbow=1
+" Trim
+
+function! Trim()
+  exe "normal mz"
+  %s/\s*$//
+  exe "normal `z"
+  exe "normal zz"
+endfunction
+
+command! -nargs=0 Trim :call Trim()
+nnoremap <silent> <Leader>cw :Trim<CR>
+
+" NERDTree
 let NERDTreeShowHidden=1
-let g:CommandTAcceptSelectionSplitMap=['<C-s>']
-let g:CommandTAcceptSelectionVSplitMap=['<C-v>']
-let g:CommandTCancelMap=['<Esc>', '<C-c>']
-let g:CommandTMaxHeight=10
-let g:vim_markdown_folding_disabled=1
+nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
+
+" TypeScript
+let g:typescript_indent_disable = 1
