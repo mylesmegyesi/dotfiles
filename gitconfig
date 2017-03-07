@@ -5,7 +5,8 @@
   user = mylesmegyesi
 [core]
   editor = vim
-  whitespace = trailing-space,space-before-tab
+  whitespace = trailing-space,space-before-tab,cr-at-eol
+  autocrlf = input
 [apply]
   whitespace = fix
 [color]
@@ -19,3 +20,9 @@
   staged = diff --staged
 [push]
   default = tracking
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[commit]
+	gpgsign = true
