@@ -1,0 +1,2 @@
+rvm_ignore_dotfiles_flag=yes
+rvm_autolibs_flag=disabled
