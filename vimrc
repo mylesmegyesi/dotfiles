@@ -48,8 +48,10 @@ autocmd ColorScheme * highlight LineLengthError ctermbg=black guibg=black
 
 :set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
-if &t_Co == 256
-  colorscheme Tomorrow-Night
+" Colors
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
 endif
 
 " Keymaps
