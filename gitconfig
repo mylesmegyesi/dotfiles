@@ -1,8 +1,7 @@
 [user]
   name = Myles Megyesi
-[github]
-  user = mylesmegyesi
 [core]
+  pager = diff-so-fancy | less --tabs=4 -RFX
   editor = vim
   whitespace = trailing-space,space-before-tab,cr-at-eol
   autocrlf = input
@@ -16,7 +15,12 @@
   hist = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
   st = status
   staged = diff --staged
+  conflicts = diff --name-only --diff-filter=U
 [push]
   default = tracking
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg
+[pull]
+	ff = only

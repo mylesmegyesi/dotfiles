@@ -32,6 +32,9 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
+" Makefiles use tabs, not spaces
+autocmd FileType make setlocal noexpandtab
+
 " Highlight trailing whitespace
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/

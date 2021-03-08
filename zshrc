@@ -11,8 +11,7 @@ stty -ixon -ixoff # disable scroll lock
 export EDITOR=vim
 export HOMEBREW_PREFIX=$HOME/.homebrew
 
-autoload -Uz compinit
-compinit
+fpath+=~/.zfunc
 
 # Load other config files
 for config_file ($HOME/.zsh/*.zsh(.N)) source $config_file

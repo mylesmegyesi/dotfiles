@@ -1,4 +1,3 @@
-
 vc_prompt_info() {
   echo "%{$fg[cyan]%}[$(vcprompt -f %b%m%u)]%{$reset_color%}"
 }

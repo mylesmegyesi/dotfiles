@@ -1,7 +1,7 @@
 1. copy config files
 1. iTerm2
 1. Homebrew
-    brew install git vcprompt pinentry-mac gpg2 zsh zsh-syntax-highlighting direnv leiningen tmux nvm reattach-to-user-namespace
+    brew install git vcprompt pinentry-mac gpg2 zsh zsh-syntax-highlighting direnv leiningen tmux nvm reattach-to-user-namespace pyenv diff-so-fancy
 1. zsh
   1. set as default login shell
       chsh -s $HOMEBREW_PREFIX/bin/zsh
