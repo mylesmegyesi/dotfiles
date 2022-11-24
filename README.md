@@ -23,7 +23,18 @@
     1. pathogen
     1. nerdtree
     1. vim-fugitive
+1. sdkman
+
+    ```
+    curl -s "https://get.sdkman.io" | bash
+    ```
+    
 1. base16
+
+    ```
+    git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+    ```
+    
     1. iTerm2
     1. vim
 1. gpg
