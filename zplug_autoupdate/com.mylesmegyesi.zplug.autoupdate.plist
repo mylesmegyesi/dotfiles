@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.mylesmegyesi.zplug.autoupdate</string>
+  <key>Program</key>
+  <string>/Users/mylesmegyesi/Library/Application Support/com.mylesmegyesi.zplug.autoupdate/zplug_autoupdate</string>
+  <key>ProgramArguments</key>
+  <array>
+      <string>/Users/mylesmegyesi/Library/Application Support/com.mylesmegyesi.zplug.autoupdate/zplug_autoupdate</string>
+  </array>
+<!--
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardErrorPath</key>
+  <string>/Users/mylesmegyesi/Library/Logs/com.mylesmegyesi.zplug.autoupdate/com.mylesmegyesi.zplug.autoupdate.err.log</string>
+  <key>StandardOutPath</key>
+  <string>/Users/mylesmegyesi/Library/Logs/com.mylesmegyesi.zplug.autoupdate/com.mylesmegyesi.zplug.autoupdate.out.log</string>
+-->
+  <key>StartInterval</key>
+  <integer>86400</integer>
+  <key>LowPriorityBackgroundIO</key>
+  <true/>
+  <key>LowPriorityIO</key>
+  <true/>
+  <key>ProcessType</key>
+  <string>Background</string>
+</dict>
+</plist>
+

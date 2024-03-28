@@ -12,6 +12,7 @@
 
    ```shell
    chsh -s $HOMEBREW_PREFIX/bin/zsh
+   ```
 
 1. vim
     1. pathogen
@@ -28,3 +29,12 @@
 
     1. iTerm2
     1. vim
+
+1. zplug autoupdate
+
+    ```
+    mkdir ~/Library/Application\ Support/com.mylesmegyesi.zplug.autoupdate
+    cp zplug_autoupdate/zplug_autoupdate ~/Library/Application\ Support/com.mylesmegyesi.zplug.autoupdate
+    cp zplug_autoupdate/com.mylesmegyesi.zplug.autoupdate.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.mylesmegyesi.zplug.autoupdate.plist
+    ```

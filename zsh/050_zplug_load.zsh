@@ -6,4 +6,3 @@ fi
 
 zplug load
 zplug clean --force
-zplug update --force
