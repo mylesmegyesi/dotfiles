@@ -9,7 +9,6 @@ setopt IGNORE_EOF
 setopt AUTO_CD
 stty -ixon -ixoff # disable scroll lock
 export EDITOR=vim
-export HOMEBREW_PREFIX=$HOME/.homebrew
 
 fpath+=~/.zfunc
 

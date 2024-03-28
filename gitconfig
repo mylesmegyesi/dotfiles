@@ -1,26 +1,40 @@
 [user]
   name = Myles Megyesi
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFL3bWEn5OjqRTTkW1ue+8EMWNY5F/VD494XQrRHmlJY
 [core]
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = delta
   editor = vim
   whitespace = trailing-space,space-before-tab,cr-at-eol
   autocrlf = input
+[interactive]
+  diffFilter = delta --color-only
 [apply]
   whitespace = fix
 [color]
   ui = true
+[diff]
+  colorMoved = default
+[delta]
+  navigate = true
+  line-numbers = true
+  hunk-header-style = omit
 [alias]
   br = branch
   co = checkout
   hist = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
   st = status
   staged = diff --staged
-  conflicts = diff --name-only --diff-filter=U
+  recommit = commit -eF $(git rev-parse --git-dir)/COMMIT_EDITMSG
 [push]
   default = tracking
-[commit]
-	gpgsign = true
-[gpg]
-	program = gpg
 [pull]
-	ff = only
+  ff = only
+[diff "lockb"]
+  textconv = bun
+  binary = true
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
